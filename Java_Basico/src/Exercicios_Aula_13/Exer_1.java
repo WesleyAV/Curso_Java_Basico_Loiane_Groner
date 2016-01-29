@@ -5,10 +5,6 @@ package Exercicios_Aula_13;
 
 import java.util.Scanner;
 
-/**
- *
- * @author wesley.vieira
- */
 public class Exer_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
