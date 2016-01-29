@@ -24,6 +24,7 @@ public class Exer_11 {
         double n3 = scan.nextDouble();
 
         double resultado_a, resultado_b, resultado_c;
+        
         //o produto do dobro do primeiro com metade do segundo .
         resultado_a = (n1 * 2) + (n2 / 2);
         System.out.println("O produto do dobro do primeiro com metade do segundo é: " + resultado_a);
