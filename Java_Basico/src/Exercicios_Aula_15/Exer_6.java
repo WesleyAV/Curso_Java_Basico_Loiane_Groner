@@ -26,6 +26,5 @@ public class Exer_6 {
         } else if (num3 > num1 && num3 > num2) {
             System.out.println("O maior número é: " + num3);
         }
-
     }
 }
