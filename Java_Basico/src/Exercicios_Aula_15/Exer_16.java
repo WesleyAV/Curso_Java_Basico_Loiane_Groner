@@ -33,9 +33,16 @@ public class Exer_16 {
 
         double delta;
 
-        double x1;
+        double x1 = 0;
 
-        double x2;
+        double x2 = 0;
+
+        delta = ((b * b) - (4 * a * c));
+
+        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+        System.out.println("O valor de Delta é: " + delta);
 
         /*a. Se o usuário informar o valor de A igual a zero, a equação não é
         do segundo grau e o programa não deve fazer pedir os demais
@@ -43,9 +50,21 @@ public class Exer_16 {
          */
         if (a == 0) {
             System.out.println("A equação não é de 2º grau.");
-        } else if () {
-
+        } /*b. Se o delta calculado for negativo, a equação não possui raizes
+        reais. Informe ao usuário e encerre o programa;
+         */ else if (delta < 0) {
+            System.out.println("A equação não possui raízes reais.");
+        } /*c. Se o delta calculado for igual a zero a equação possui apenas
+        uma raiz real; informe-a ao usuário;
+         */ else if (delta == 0) {
+            System.out.println("A equação possui apenas uma raiz real.");
+            System.out.println("O valor de X1 é: " + x1);
+        } /*d. Se o delta for positivo, a equação possui duas raiz reais;
+        informe-as ao usuário;
+         */ else if (delta > 0) {
+            System.out.println("A equação possui duas raízes reais.");
+            System.out.println("O valor de X1 é: " + x1);
+            System.out.println("O valor de X2 é: " + x2);
         }
-
     }
 }
