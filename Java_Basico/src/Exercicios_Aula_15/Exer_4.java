@@ -14,23 +14,30 @@ public class Exer_4 {
         System.out.println("Digite uma letra:");
         String letra = scan.next();
 
-        if (letra.equalsIgnoreCase("a") || letra.equalsIgnoreCase("e") || letra.equalsIgnoreCase("i") || letra.equalsIgnoreCase("o") || letra.equalsIgnoreCase("u")) {
-            System.out.println("Vogal");
-        } else {
-            System.out.println("Consoante");
+        if (letra.length() > 1) {
+            System.out.println("Não é uma letra válida.");
+            if (letra.equalsIgnoreCase("a") || letra.equalsIgnoreCase("e") || letra.equalsIgnoreCase("i") || letra.equalsIgnoreCase("o") || letra.equalsIgnoreCase("u")) {
+                System.out.println("Vogal");
+            } else {
+                System.out.println("Consoante");
+            }
         }
 
-        //Switch Case
-        switch (letra) {
-            case "a":
-            case "e":
-            case "i":
-            case "o":
-            case "u":
-                System.out.println("Vogal usando Switch");
-                break;
-            default:
-                System.out.println("Consoante usando Switch");
+        if (letra.length() > 1) {
+            System.out.println("Não é uma letra válida.");
+        } else {
+            //Switch Case
+            switch (letra) {
+                case "a":
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                    System.out.println("Vogal usando Switch");
+                    break;
+                default:
+                    System.out.println("Consoante usando Switch");
+            }
         }
 
     }
