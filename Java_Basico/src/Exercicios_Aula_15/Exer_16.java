@@ -25,6 +25,10 @@ public class Exer_16 {
         System.out.println("Informe o valor de a.");
         double a = scan.nextDouble();
 
+        if (a == 0) {
+            System.out.println("A equação não é de 2º grau.");
+        }
+
         System.out.println("Informe o valor de b.");
         double b = scan.nextDouble();
 
